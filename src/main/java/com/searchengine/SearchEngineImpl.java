@@ -6,11 +6,13 @@ import com.searchengine.db.SearchEngineDB;
 import com.searchengine.util.InvertedIndexCreator;
 import com.searchengine.util.TFIDFCalculator;
 import com.searchengine.util.TokenizerUtil;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+@Service
 public class SearchEngineImpl implements SearchEngine {
     private final SearchEngineDB searchEngineDB;
 
